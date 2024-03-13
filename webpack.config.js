@@ -16,7 +16,7 @@ module.exports = (env) => {
     }
     return {
         mode: mode,
-        entry: [ __dirname + '/src/index.ts'],
+        entry: __dirname + '/src/index.ts',
         devtool: 'inline-source-map',
         output: {
             path: __dirname + '/lib',
@@ -33,21 +33,15 @@ module.exports = (env) => {
                     loader: 'babel-loader',
                     exclude: /(node_modules|bower_components)/
              },
-                // {
-                //     test: /\.ts?$/,
-                //     loader: 'eslint-loader',
-                //     exclude: /node_modules/,
-                      
-                // }
             ]
         },
         target: 'node',
         node: {
-            process: false
+            global: false
         },
         plugins: [
             new webpack.DefinePlugin({
-                'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+                'process.env.NODE_ENV': JSON.stringify(mode)
             })
         ],
         resolve: {

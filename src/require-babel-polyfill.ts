@@ -1,5 +1,5 @@
 export default (() => {
-    if (!global || !global._babelPolyfill) {
+    if (!global || ! (global as any)._babelPolyfill) {
         require('babel-polyfill');
     }
 })();

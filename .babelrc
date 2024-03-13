@@ -1,5 +1,17 @@
 {
-  "presets": ["@babel/preset-typescript", ["@babel/env", { "modules": "commonjs" , "useBuiltIns": "usage"}]  ],
-  "plugins": ["add-module-exports", "@babel/plugin-transform-runtime"]
+    "presets": [
+      "@babel/preset-typescript", 
+      [
+        "@babel/env",
+        {
+            "modules": "commonjs",
+            "corejs": "2.0.0",
+            "useBuiltIns": "usage"
+        }
+      ]
+    ],
+    "plugins": [
+      "add-module-exports", 
+      "@babel/plugin-transform-runtime"
+    ]
 }
-
