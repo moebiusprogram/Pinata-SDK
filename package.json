@@ -19,7 +19,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/PinataCloud/Pinata-SDK.git"
+        "url": "https://github.com/moebiusprogram/Pinata-SDK.git"
     },
     "keywords": [
         "webpack",
@@ -45,6 +45,7 @@
         "@babel/register": "^7.23.7",
         "@types/jest": "^29.5.12",
         "@types/node": "^18.19.24",
+        "@typescript-eslint/eslint-plugin": "^7.2.0",
         "acorn": "^8.11.3",
         "babel-loader": "^9.1.3",
         "babel-plugin-add-module-exports": "^1.0.4",

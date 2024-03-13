@@ -83,7 +83,7 @@ export default function pinFileToIPFS(
     readStream: any,
     options?: PinataPinOptions
 ): Promise<PinataPinResponse> {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         const data = new NodeFormData();
 
         if (

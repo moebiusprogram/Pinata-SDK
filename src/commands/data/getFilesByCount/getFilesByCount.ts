@@ -21,7 +21,7 @@ export default function getFilesByCount(
 
             return {
                 next() {
-                    return new Promise((resolve, reject) => {
+                    return new Promise((resolve) => {
                         if (i === 0 || (i % pageLimit === 0 && keepLooping)) {
                             resolve(
                                 pinList(config, {
